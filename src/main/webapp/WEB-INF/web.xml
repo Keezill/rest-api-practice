@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+    <display-name>Visitors</display-name>
+
+    <servlet>
+        <servlet-name>visitsServlet</servlet-name>
+        <servlet-class>mamedov.servlet.VisitsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>visitsServlet</servlet-name>
+        <url-pattern>/visits</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>statisticServlet</servlet-name>
+        <servlet-class>mamedov.servlet.StatisticServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>statisticServlet</servlet-name>
+        <url-pattern>/stat</url-pattern>
+    </servlet-mapping>
+</web-app>
